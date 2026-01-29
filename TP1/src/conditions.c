@@ -16,3 +16,14 @@ int main() {
         if (i % 5 == 0 || i % 7 == 0) {
             somme += i;
         }
+
+        /* Si la somme dépasse 5000, on arrête la boucle */
+        if (somme > 5000) {
+            break;
+        }
+    }
+
+    printf("Somme finale = %d\n", somme);
+
+    return 0;
+}
